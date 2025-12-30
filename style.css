@@ -81,4 +81,10 @@ body {
   padding: 10px;
   margin: 20px auto 0;
   cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.app__next-button:hover {
+  background-color: #335f72; /* +5–7% светлее */
+  transform: translateY(-1px);
 }
