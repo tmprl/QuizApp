@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh;
-  margin: 0;
+
   background: linear-gradient(
     135deg,
     #0f2027,
@@ -29,7 +29,7 @@ body {
 }
 
 .wrapper__title {
-    font-size: 28px;
+    font-size: 32px;
     color: #0f2027;
     font-weight: 600;
     border-bottom: 1px solid #333;
@@ -38,4 +38,19 @@ body {
 
 .wrapper__quiz {
     padding: 20px 0;
+}
+
+.wrapper__quiz-question{
+    font-size: 24px;
+    color: #1f2933;
+    font-weight: 600;
+}
+
+.wrapper__button {
+    background-color: #203a43;
+    color: #fff;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    margin: 7px 0;
 }
