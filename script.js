@@ -25,7 +25,7 @@ const questions = [
             {text: 'Saturn', correct: false},
             {text: 'Mars', correct: true},
         ]
-    }
+    },
     {
         question: 'What is the largest ocean on Earth?',
         answers: [
@@ -44,4 +44,8 @@ const questions = [
             {text: 'Pablo Picasso', correct: false},
         ]
     }
-]
+];
+
+const questionElement = document.getElementById('question');
+const answerButton = document.getElementById('answer-buttons');
+const nextButton = document.getElementById('next-button');
