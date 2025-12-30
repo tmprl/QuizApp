@@ -19,7 +19,7 @@ body {
   );
 }
 
-.wrapper {
+.app {
     background-color: #fff;
     width: 90%;
     max-width: 600px;
@@ -28,7 +28,7 @@ body {
     padding: 30px;
 }
 
-.wrapper__title {
+.app__title {
     font-size: 32px;
     color: #0f2027;
     font-weight: 600;
@@ -36,17 +36,17 @@ body {
     padding-bottom: 30px;
 }
 
-.wrapper__quiz {
+.app__quiz {
     padding: 20px 0;
 }
 
-.wrapper__quiz-question{
+.app__quiz-question{
     font-size: 24px;
     color: #1f2933;
     font-weight: 600;
 }
 
-.wrapper__button {
+.app__button {
     background: transparent;
     border: 1px solid #203a43;
     border-radius: 5px;
@@ -64,8 +64,12 @@ body {
     transform 0.15s ease;
 }
 
-.wrapper__button:hover {
+.app__button:hover {
   background-color: #203a43;
   color: #ffffff;
   transform: translateY(-1px);
+}
+
+.app__next-button {
+    
 }
