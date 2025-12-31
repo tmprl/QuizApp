@@ -50,6 +50,7 @@ body {
     background: transparent;
     border: 1px solid #203a43;
     border-radius: 5px;
+    font-size: 16px;
     color: #1f2933;
     text-align: left;
     font-weight: 500;
@@ -86,6 +87,19 @@ body {
 }
 
 .app__next-button:hover {
-  background-color: #335f72; /* +5–7% светлее */
+  background-color: #335f72; 
   transform: translateY(-1px);
+}
+
+.correct {
+  background-color: #2563eb; 
+  color: #ffffff;
+  border-color: #1d4ed8;
+}
+
+.incorrect {
+  background-color: #dc2626;
+  color: #ffffff;
+  border-color: #b91c1c;
+
 }
