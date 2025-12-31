@@ -65,10 +65,14 @@ body {
     transform 0.15s ease;
 }
 
-.app__button:hover {
+.app__button:hover:not([disabled]) {
   background-color: #203a43;
   color: #ffffff;
   transform: translateY(-1px);
+}
+
+.app__button:disabled{
+  cursor: no-drop;
 }
 
 .app__next-button {
@@ -101,5 +105,4 @@ body {
   background-color: #dc2626;
   color: #ffffff;
   border-color: #b91c1c;
-
 }
