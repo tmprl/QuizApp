@@ -70,9 +70,29 @@ function showQuestion() {
         const button = document.createElement('button');
         button.innerHTML = answer.text;
         button.classList.add('app__button');
-        answerButton.appendChild(button)
+        answerButton.appendChild(button);
+        if(answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener('click', selectAnswer);
     })
 }
 
+function reset() {
+    nextButton.style.display = 'none';
+    while(answerButton.firstChild) {
+        answerButton.removeChild(answerButton.firstChild);
+    }
+}
+
+function selectAnswer(e) {
+    const selectedButton = e.target;
+    const isCorrect = selectedButton.dataset.correct === 'true';
+    if(isCorrect) {
+        selectedButton.classList.add('correct');
+    } else {
+        selectedButton.classList.add('incorrect');
+    }
+}
 
 startQuiz();
